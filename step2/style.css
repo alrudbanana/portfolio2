@@ -1,0 +1,399 @@
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+
+body{
+    font-family: 'GmarketSans';
+    font-size: 15px;
+}
+/* ---------------------Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol,li{
+    list-style: none;
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.rwd-no{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+/* ---------------------header */
+.visualWrap{
+   
+}
+.visualWrap .headerWrap{
+    background-color: #fff;
+    border: 1px solid #ececec;
+}
+.headerWrap header{
+    justify-content: flex-start;
+    gap: 0 100px;
+    /* border: 3px solid red; */
+    width: 1280px;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+header h1{
+    /* width: 244px; */
+}
+header .gnb{
+    gap: 0 80px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+header .gnb li{
+    
+}
+.visualWrap .main-banner{
+    position: relative;
+}
+.visualWrap .main-banner img{
+    height: 600px;
+    object-fit: cover;
+}
+.visualWrap .txt-box{
+    margin: 0 auto;
+    padding: 260px 0 200px 100px;
+    font-size: 30px;
+    font-weight: 500;
+    position: absolute;
+    color: #fff;
+}
+.visualWrap .txt-box .txt-sub{
+    font-weight: 300;
+    font-size: 25px;
+}
+.visualWrap .txt-box span{
+    display: block;
+}
+
+.visualWrap .asso-info-wrap{
+    width: 1440px;
+    /* 애만 1440px? */
+    /* border: 1px solid red; */
+    padding: 23px;
+    position: relative;
+    margin: 0 auto;
+    border-bottom: 1px solid #ececec;
+}
+.visualWrap .asso-info-wrap .asso-info{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0,-80%);
+    padding: 20px 45px;
+    background-color: #4BA8FD;
+    border-radius: 0 0 0 20px;
+    color: #fff;
+}
+.visualWrap .asso-info-wrap .asso-detail .info-box{
+    display: block;
+    /* 커서 포인터 안됨...! */
+}
+.visualWrap .asso-info-wrap .asso-detail .info-box h2{
+    color: #0F34A7;
+    margin: 0 0 10px;
+}
+.visualWrap .asso-info-wrap .asso-detail-list{
+    align-items: center;
+    gap: 0 10px;
+}
+.visualWrap .asso-info-wrap .asso-detail-list::after{
+    content: '';
+    width: 1px;
+    height: 50px;
+    display: block;
+    background-color: #000;
+}
+.visualWrap .asso-info-wrap .asso-detail-list:last-child::after{
+    content: '';
+    display: none;
+}
+.visualWrap .asso-info-wrap .asso-detail i{
+    font-size: 35px;
+    margin-right: 20px;
+}
+
+/* ---------------------content */
+.contentWrap{
+    margin: 100px auto 0;
+    /* border: 3px solid orange; */
+}
+/* ---------------------content1 */
+.contentWrap .content1{
+    /* border: 5px solid red; */
+    width: 1280px;
+    margin: 0 auto;
+}
+.contentWrap .content1 .news-titleWrap{
+    justify-content: flex-start;
+    gap: 0 40px;
+    margin-bottom: 25px;
+}
+.contentWrap .content1 .news-titleWrap .news-title{
+}
+.contentWrap .content1 .news-titleWrap .news-title h2{
+    font-size: 40px;
+    margin: 0 0 15px;
+}
+.contentWrap .content1 .news-titleWrap .news-title p{
+    margin-bottom: 5px;
+}
+.contentWrap .content1 .news-titleWrap .news-type{
+    /* border: 1px solid red; */
+    align-items: flex-end;
+    gap: 0 25px;
+}
+.contentWrap .content1 .news-titleWrap .news-type p{
+    font-weight: 600;
+    padding: 5px 20px;
+}
+.contentWrap .content1 .news-titleWrap .news-type p:first-child{
+    color: #0F34A7;
+    border: 1px solid #000;
+    border-radius: 50px;
+}
+.contentWrap .content1 .news-contentWrap{}
+.contentWrap .content1 .news-contentWrap .news-content{
+    width: 770px;
+    /* width 값을 고정으로 넣지 않고 퍼센트 값으로 넣으면 4개의 네모 크가가 각각 다름 */
+    /* width: 65%; */
+    gap: 30px 0 ;
+    flex-wrap: wrap;
+}
+.contentWrap .content1 .news-contentWrap .news-content > div{
+    width: 48%;
+    background-color: #F9F9F9;
+    box-shadow: 0 0 20px #00000025;
+    padding: 20px;
+}
+.contentWrap .content1 .news-contentWrap .news-content .news-detail{
+    padding: 30px 20px;
+}
+.contentWrap .content1 .news-contentWrap .news-content div h2{
+    margin-bottom: 22px;
+    font-size: 22px;
+}
+.contentWrap .content1 .news-contentWrap .news-content div p{
+    font-size: 12px;
+}
+.contentWrap .content1 .news-contentWrap .news-photo{
+    width: 400px;
+    box-shadow: 0 0 20px #00000025;
+}
+
+
+/* ---------------------content2 */
+.content2{
+    margin: 110px auto 0;
+    /* border: 5px solid yellow; */
+}
+.content2 .quickLinkWrap{
+    width: 1280px;
+    margin: 0 auto;
+    gap: 0 10px;
+    /* border: 1px solid red; */
+    align-items: center;
+}
+.content2 .quickLink{
+}
+.content2 .quickLinkWrap .quickLink{
+    /* border: 1px solid red; */
+}
+.content2 .quickLinkWrap .quickLink .kfa-strong{
+    color: #0F34A7;
+}
+.content2 .quickLinkWrap .quickLink-content{
+    background-color: #D8E4FB;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    width: 80%;
+}
+.content2 .quickLinkWrap .quickLink-content a img{
+    width: 50px;
+    margin-bottom: 20px; 
+    /* img에 주는 게 맞을까?? */
+}
+.content2 .quickLinkWrap .quickLink-content > div > a{
+    display: block;
+    text-align: center;
+}
+
+/* ---------------------content3 */
+.content3{
+    border: 3px solid green;
+    margin: 95px auto 0;
+    text-align: center;
+}
+.content3 .com-schedule{
+    width: 1280px;
+    /* height: 500px; */
+}
+.content3 .com-schedule .com-scheduleWrap{
+    background-color: #ececec;
+}
+.content3 .com-schedule .com-scheduleWrap > div{
+    text-align: left;
+    border: 1px solid #000;
+    /* Q flex 풀고.....넘치는건 가리고 싶다 QQQQ.... */
+    width: 25%;
+    height: 400px;
+    top: 0;
+    left: 0;
+}
+.content3 .com-schedule .com-scheduleWrap > div .com-title{}
+.content3 .com-schedule .com-scheduleWrap > div .com-detail{}
+/* ---------------------content4*/
+.content4{
+    margin-top: 180px;
+}
+.content4 .sub-menuWrap{
+    flex-wrap: wrap;
+    width: 1280px;
+    margin: 0 auto;
+    gap: 30px 0;
+}
+.content4 .sub-menuWrap img{
+    width: 140px;
+    /* 이미지에 width를 주는것이 맞나..? */
+}
+.content4 .sub-menuWrap > div{
+    width: 49%;
+    /* border: 1px solid red; */
+    border-radius: 15px;
+    padding: 15px 30px;
+}
+.content4 .sub-menuWrap .flex{
+    align-items: center;
+}
+.content4 .asso-intro{
+    background-color: #D8E4FB;
+}
+.content4 .asso-cert{
+    background-color: #FCCED2;
+}
+.content4 .asso-photo{
+    background-color: #4B4E8F;
+}
+.content4 .asso-video{
+    background-color: #A08EDB;
+}
+/* ---------------------content5*/
+.content5{
+    margin-top: 210px;
+    text-align: center;
+    font-size: 15px;
+}
+.content5 .spon-title{
+    margin-bottom: 45px;
+}
+.content5 .spon-title h2{
+    font-size: 18px;
+    font-weight: 400;
+}
+.content5 .sponsorWrap{
+    overflow: hidden;
+    padding: 0 0 50px;
+}
+.content5 .sponsorWrap > div{
+    width: 10%;
+}
+/* ---------------------footer*/
+.footerWrap{
+    /* border: 3px solid violet; */
+}
+.footerWrap .footerTop{
+    /* border: 1px solid red; */
+    background-color: #202C5C;
+    color: #fff;
+}
+.footerWrap .footerTop .footer-menu{
+    width: 24%;
+    /* border: 1px solid red; */
+    position: relative;
+}
+.footerWrap .footerTop .footer-menu a{
+    display: block;
+    /* border: 1px solid red; */
+    padding: 23px 0 23px 0;
+    text-align: center;
+}
+.footer-menu::after{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #ececec;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.footer-menu:last-child::after{
+    content: '';
+}
+footer{
+    width: 1280px;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+footer .footer-info{
+}
+footer .footer-info a{
+    margin-right: 50px;
+    font-weight: 700;
+    color: #939191;
+}
+footer .footer-info .info-policy{
+    color: #DB121A;
+}
+footer .footer-info a:last-child{
+    margin: 0;
+}
+footer .sns-Wrap{
+    gap: 0 30px;
+}
+footer .sns-Wrap .sns{
+    width: 30px;
+}
+
+footer .footer-content{
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 30px;
+}
+footer .footer-content .footer-content-detail p{
+    line-height: 1.5em;
+}
+footer .footer-content .footer-content-detail .portfolio{
+    color: #939191;
+    font-size: 12px;
+}
+
